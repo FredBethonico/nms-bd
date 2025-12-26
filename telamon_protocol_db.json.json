@@ -1,0 +1,254 @@
+{
+  "meta_dados": {
+    "usuario": "Fred 'Anarquinho'",
+    "titulo": "Iteração Anômala",
+    "status": "Veterano / Reset Consciente",
+    "versao_protocolo": "5.4 (Build Mythic)",
+    "prefixo_global": "ANR"
+  },
+  "protocolos": {
+    "sistemas_estelares": {
+      "nome_protocolo": "Protocolo Astra v2.0 (Trade Focus)",
+      "descricao": "Nomenclatura tática avançada para rotas de comércio e caça de naves S.",
+      "formato": "ANR // [Nome Latino] /// [Raça] [Tipo]-[Tier]",
+      "exemplo": "ANR // Aurum Lux /// G MIN-3 (Gek, Mineração, Rica)",
+      "temas_por_classe_estelar": {
+        "amarela_cobre": [
+          "Aurum",
+          "Lux",
+          "Sol",
+          "Origo",
+          "Prima"
+        ],
+        "vermelha_cadmio": [
+          "Rubra",
+          "Sanguis",
+          "Ignis",
+          "Mars",
+          "Ira"
+        ],
+        "verde_emeril": [
+          "Viridis",
+          "Venenum",
+          "Silva",
+          "Acidus",
+          "Vita"
+        ],
+        "azul_indio": [
+          "Caelum",
+          "Abyssus",
+          "Gelu",
+          "Aether",
+          "Glacies"
+        ],
+        "buraco_negro": [
+          "Nox",
+          "Umbra",
+          "Finis",
+          "Mors",
+          "Void"
+        ]
+      },
+      "codigos_taticos": {
+        "raca": {
+          "G": "Gek (Comércio)",
+          "V": "Vy'keen (Guerra)",
+          "K": "Korvax (Ciência)",
+          "X": "Pirata (Ilegal/Mercado Negro)",
+          "0": "Desabitado"
+        },
+        "tipo_economia": {
+          "MIN": "Mineração / Extração (Vende para MAN)",
+          "MAN": "Manufatura / Industrial (Vende para TEC)",
+          "TEC": "Tecnologia / High-Tech (Vende para ENE)",
+          "ENE": "Energia / Geração de Poder (Vende para MIN)",
+          "CIE": "Científico / Pesquisa (Vende para COM)",
+          "COM": "Comercial / Trading (Vende para MAT)",
+          "MAT": "Materiais Avançados / Alquimia (Vende para CIE)"
+        },
+        "economia_tier": {
+          "1": "Baixa (Destitute, Failing, Fledgling, Low Supply, Struggling...)",
+          "2": "Média (Adequate, Balanced, Comfortable, Developing, Medium, Promising...)",
+          "3": "Alta / Rica (Advanced, Affluent, Booming, Flourishing, High Supply, Opulent, Prosperous, Wealthy)"
+        }
+      }
+    },
+    "planetas": {
+      "nome_protocolo": "Protocolo Ouroboros",
+      "descricao": "Identificação rápida de bioma e perigo.",
+      "formato": "ANR // [Nome Criativo] [Código Bioma]",
+      "codigos_bioma": {
+        "I": "Exuberante / Paraíso / Virgem",
+        "II": "Tóxico / Fúngico",
+        "III": "Radioativo / Gama",
+        "IV": "Gélido / Boreal",
+        "V": "Queimado / Vulcânico",
+        "VI": "Morto / Sem Ar / Terraformed",
+        "VII": "Exótico / Glitch / Anômalo"
+      },
+      "sufixos_adicionais": {
+        "-A": "Agressivo (Sentinelas ou Fauna)",
+        "-X": "Tempestades Extremas"
+      }
+    },
+    "bases": {
+      "nome_protocolo": "Protocolo Bastion",
+      "descricao": "Identificação funcional das construções.",
+      "formato": "ANR // [Nome Épico] [Código Função]",
+      "codigos_funcao": {
+        "[HQ]": "Base Principal / Lar / QG",
+        "[MN]": "Mineração / Extrator Industrial (+ Símbolo Elemento)",
+        "[BIO]": "Fazenda / Plantio / Estufa",
+        "[PRT]": "Portal / Glifos de Viagem",
+        "[TRD]": "Comércio / Rota de Mercado",
+        "[LOG]": "Armazém / Depósito",
+        "[OBS]": "Observatório / Vista Panorâmica"
+      }
+    },
+    "xenobiologia": {
+      "nome_protocolo": "Taxonomia Universal Avançada",
+      "descricao": "Sistema binomial detalhado dividido por classes biológicas.",
+      "formato": "[Prefixo de Classe] + [Sufixo Descritivo]",
+      "fauna_terrestre": {
+        "mamiferos": {
+          "Felis": "Felinos (Gatos, Tigres)",
+          "Canis": "Caninos (Lobos, Raposas)",
+          "Ursus": "Ursos ou bípedes peludos pesados",
+          "Rodentia": "Roedores, castores, esquilos gigantes",
+          "Prion": "Ungulados leves (Cervos, Antílopes, Gazelas)",
+          "Bos": "Ungulados pesados (Vacas, Bisões)"
+        },
+        "repteis_dinos": {
+          "Theroma": "Bípedes carnívoros (T-Rex/Raptor)",
+          "Sauros": "Pescoçudos (Diplos) ou saurópodes grandes",
+          "Reptil": "Lagartos genéricos ou crocodilos",
+          "Testudo": "Tartarugas"
+        },
+        "insetoides": {
+          "Mantis": "Louva-a-deus ou corpo ereto com garras",
+          "Scarab": "Besouros, caranguejos de carapaça dura (baixo)",
+          "Aranea": "Aranhas ou muitos olhos/pernas finas",
+          "Insecta": "Genérico"
+        },
+        "estranhos_anomalos": {
+          "Proto": "Proto-Geks (bípedes pequenos com bico)",
+          "Blob": "Massas amorfas, gelatinas saltitantes",
+          "Vermis": "Cobras voadoras, minhocas de areia ou enguias terrestres",
+          "Fungus": "Criaturas com cogumelos crescendo nas costas",
+          "Mechanoceris": "Fauna Mecânica / Robótica"
+        },
+        "voadores": {
+          "Avis": "Pássaros tradicionais",
+          "Draco": "Dragões, morcegos grandes, lagartos alados"
+        }
+      },
+      "fauna_marinha": {
+        "peixes_tubaroes": {
+          "Piscis": "Peixe Comum",
+          "Selach": "Tubarão / Predador",
+          "Anguilla": "Enguia / Cobra"
+        },
+        "invertebrados_moluscos": {
+          "Medusa": "Água-viva",
+          "Cochlea": "Caracol / Concha Espiral",
+          "Bivalvia": "Ostra / Concha Dupla",
+          "Teuthis": "Lula / Polvo",
+          "Limax": "Lesma do Mar (Nudibrânquio)",
+          "Nautilus": "Cefalópode com Concha"
+        },
+        "arraias_planadores": {
+          "Raia": "Arraia Comum (Fundo)",
+          "Manta": "Jamanta Gigante (Águas Abertas)",
+          "Torpedo": "Arraia Elétrica / Redonda",
+          "Pterois": "Peixe Alado / Peixe-Leão"
+        },
+        "especiais": {
+          "Abyss": "Horror Abissal",
+          "Cetus": "Baleia / Grande Mamífero"
+        }
+      },
+      "sufixos_descritivos": {
+        "comportamento": {
+          "Ferox": "Agressivo / Caçador",
+          "Pacis": "Pacífico",
+          "Timidus": "Arisco / Foge rápido",
+          "Sapiens": "Inteligente / Social",
+          "Venator": "Espreita a presa (Stalker)"
+        },
+        "fisico_tamanho": {
+          "Titan": "Gigantesco (acima de 6m)",
+          "Colossus": "Grande e massivo",
+          "Minor": "Pequeno / Filhote",
+          "Micro": "Minúsculo"
+        },
+        "fisico_visual": {
+          "Armatus": "Blindado / Placas ósseas",
+          "Spina": "Espinhoso",
+          "Cornutus": "Chifres proeminentes",
+          "Pluma": "Com penas",
+          "Oculus": "Olhos grandes ou múltiplos",
+          "Chroma": "Colorido / Vibrante"
+        },
+        "ambiente_elemental": {
+          "Noctis": "Noturno",
+          "Cavernae": "Subterrâneo",
+          "Aquatis": "Aquático (se anfíbio)",
+          "Ignis": "Cor de fogo / Planetas quentes",
+          "Gelidus": "Pelagem densa / Planetas frios",
+          "Radix": "Radioativo / Mutante",
+          "Lumen": "Bioluminescente"
+        }
+      }
+    },
+    "botanica": {
+      "nome_protocolo": "Protocolo Gaia",
+      "descricao": "Classificação rápida baseada no recurso fornecido pela planta.",
+      "formato": "[Prefixo Recurso] + [Variante]",
+      "arvores_carbono": {
+        "Carbon Alpha": "Árvore Comum Pequena",
+        "Carbon Beta": "Árvore Comum Média",
+        "Carbon Gigas": "Árvore Gigante / Floresta Densa",
+        "Carbon Spina": "Flora com espinhos ou aparência hostil"
+      },
+      "plantas_recursos": {
+        "Oxy": "Rica em Oxigênio (Vermelha)",
+        "Sod": "Rica em Sódio (Amarela)",
+        "Jet": "Rica em Deutério (Azul/Explosão)"
+      },
+      "flora_perigosa": {
+        "Hazard Gas": "Planta que libera gás tóxico",
+        "Hazard Whip": "Planta chicote",
+        "Hazard Trap": "Planta carnívora/armadilha (Venus Flytrap)"
+      },
+      "agricola_especial": {
+        "Flora [Nome]": "Uso genérico para plantas cultiváveis (ex: Flora Mordita, Flora Cacto)"
+      },
+      "variantes_comuns": {
+        "I / II / III": "Para diferenciar modelos parecidos",
+        "Rubra": "Variação Vermelha",
+        "Flava": "Variação Amarela",
+        "Caerulea": "Variação Azul"
+      }
+    },
+    "geologia": {
+      "nome_protocolo": "Protocolo Lithos",
+      "descricao": "Classificação baseada na composição química principal e raridade.",
+      "formato": "[Prefixo Mineral] + [Formato]",
+      "ferrita_basica": {
+        "Ferrita Dust": "Pó de Ferrita (Pedras pequenas)",
+        "Ferrita Fragment": "Pó de Ferrita (Pedras médias/irregulares)",
+        "Ferrita Rock": "Pedra Grande"
+      },
+      "minerais_avancados": {
+        "Ferrita Magma": "Ferrita Pura (Requer Laser Avançado)",
+        "Ferrita Magnet": "Ferrita Magnetizada",
+        "[Elemento] Crystal": "Para cristais específicos (ex: Uranium Crystal)"
+      },
+      "curiosidades": {
+        "Alien Monolith": "Estruturas que parecem artificiais",
+        "Geo Artifact": "Formações geológicas estranhas (Ossos antigos, Glitches)",
+        "Ancient Debris": "Destroços ou sucata antiga"
+      }
+    }
+  }
+}
