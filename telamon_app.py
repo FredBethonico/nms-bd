@@ -60,9 +60,31 @@ with tab_sys:
     sub_t1, sub_t2, sub_t3 = st.tabs(["Temas & Cores", "Tática & Economia", "💡 Léxico"])
     
     with sub_t1:
-        st.write(p["temas_por_classe_estelar"])
+        # Visualização melhorada para Temas (Cards em vez de JSON)
+        for star_class, themes in p["temas_por_classe_estelar"].items():
+            clean_name = star_class.replace("_", " ").title()
+            with st.expander(f"⭐ {clean_name}", expanded=False):
+                st.markdown(" ".join([f"`{t}`" for t in themes]))
+
     with sub_t2:
-        st.write(p["codigos_taticos"])
+        # Visualização melhorada para Táticas (Listas limpas)
+        tacs = p["codigos_taticos"]
+        
+        st.markdown("##### 👽 Raças")
+        cols = st.columns(3)
+        for i, (k, v) in enumerate(tacs["raca"].items()):
+            cols[i % 3].markdown(f"**`{k}`** : {v}")
+            
+        st.divider()
+        
+        with st.expander("🏭 Tipos de Economia (Siglas)", expanded=True):
+            for k, v in tacs["tipo_economia"].items():
+                st.markdown(f"- **`{k}`**: {v}")
+                
+        with st.expander("💰 Tiers de Economia", expanded=False):
+            for k, v in tacs["economia_tier"].items():
+                st.markdown(f"- **Nível {k}**: {v}")
+
     with sub_t3:
         st.markdown("### Inspiração para Nomes")
         lex = p.get("lexico_inspiracao", {})
@@ -139,10 +161,15 @@ with tab_res:
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("### 🌿 Botânica (Gaia)")
-        st.write(data["protocolos"]["botanica"]["categorias"])
+        # Visualização melhorada
+        for k, v in data["protocolos"]["botanica"]["categorias"].items():
+            st.markdown(f"- **{k}**: {v}")
+            
     with col2:
         st.markdown("### 🪨 Geologia (Lithos)")
-        st.write(data["protocolos"]["geologia"]["categorias"])
+        # Visualização melhorada
+        for k, v in data["protocolos"]["geologia"]["categorias"].items():
+            st.markdown(f"- **{k}**: {v}")
 
 st.divider()
 st.caption(f"ID: {data['meta_dados']['usuario']} // Conectado")
