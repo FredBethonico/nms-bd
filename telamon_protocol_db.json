@@ -2,22 +2,22 @@
   "meta_dados": {
     "usuario": "Fred 'Anarquinho'",
     "titulo": "Iteração Anômala",
-    "status": "Veterano / Reset Consciente",
-    "versao_protocolo": "6.0 (Build Integrated Lexicon)",
+    "status": "Explorando as paisagens do Atlas",
+    "versao_protocolo": "7.0 (User Build)",
     "prefixo_global": "ANR"
   },
   "protocolos": {
     "sistemas_estelares": {
-      "nome_protocolo": "Protocolo Astra v2.0 (Trade Focus)",
-      "descricao": "Nomenclatura tática avançada para rotas de comércio e caça de naves S.",
+      "nome_protocolo": "Protocolo Astra",
+      "descricao": "Nomenclatura tática avançada para rotas de comércio.",
       "formato": "ANR // [Nome Latino] /// [Raça] [Tipo]-[Tier]",
       "exemplo": "ANR // Aurum Lux /// G MIN-3 (Gek, Mineração, Rica)",
       "temas_por_classe_estelar": {
-        "amarela_cobre": [ "Aurum", "Lux", "Sol", "Origo", "Prima" ],
-        "vermelha_cadmio": [ "Rubra", "Sanguis", "Ignis", "Mars", "Ira" ],
-        "verde_emeril": [ "Viridis", "Venenum", "Silva", "Acidus", "Vita" ],
-        "azul_indio": [ "Caelum", "Abyssus", "Gelu", "Aether", "Glacies" ],
-        "buraco_negro": [ "Nox", "Umbra", "Finis", "Mors", "Void" ]
+        "amarela_cobre": [ "Aurum", "Lux", "Sol", "Origo", "Prima", "Helios", "Radiis", "Lumen", "Corona" ],
+        "vermelha_cadmio": [ "Rubra", "Sanguis", "Ignis", "Mars", "Ira", "Flamma", "Cinis", "Vulcan", "Ember", "Crimson" ],
+        "verde_emeril": [ "Viridis", "Venenum", "Silva", "Acidus", "Vita", "Floralis", "Herba", "Gaea", "Chloris", "Borealis" ],
+        "azul_indio": [ "Caelum", "Abyssus", "Gelu", "Aether", "Glacies", "Nix", "Maris", "Cobalt", "Azure", "Cerulean" ],
+        "buraco_negro": [ "Nox", "Umbra", "Finis", "Mors", "Void", "Tenebrae", "Obscura", "Abyss", "Nihil", "Eventus" ]
       },
       "codigos_taticos": {
         "raca": {
@@ -50,7 +50,7 @@
     },
     "planetas": {
       "nome_protocolo": "Protocolo Ouroboros",
-      "descricao": "Identificação rápida de bioma e perigo.",
+      "descricao": "Identificação das características principais do planeta.",
       "formato": "ANR // [Nome Criativo] [Código Bioma]",
       "codigos_bioma": {
         "I": "Exuberante / Paraíso",
@@ -77,7 +77,7 @@
     "bases": {
       "nome_protocolo": "Protocolo Bastion",
       "descricao": "Identificação funcional das construções.",
-      "formato": "ANR // [Nome Épico] [Código Função]",
+      "formato": "ANR // [Nome Criativo] [Código Função]",
       "codigos_funcao": {
         "[HQ]": "Base Principal / Lar",
         "[MN]": "Mineração / Extrator",
@@ -89,75 +89,134 @@
       }
     },
     "xenobiologia": {
-      "nome_protocolo": "Taxonomia Universal Avançada",
-      "descricao": "Sistema binomial detalhado dividido por classes biológicas.",
+      "nome_protocolo": "Protocolo Chimaera",
+      "descricao": "Sistema binomial detalhado dividido por classes biológicas e morfologia.",
       "formato": "[Prefixo de Classe] + [Sufixo Descritivo]",
+      
       "fauna_terrestre": {
         "mamiferos": {
-          "Felis": "Felinos (Gatos, Tigres)",
-          "Canis": "Caninos (Lobos, Raposas)",
-          "Ursus": "Ursos ou bípedes peludos",
-          "Rodentia": "Roedores, esquilos",
-          "Bos": "Ungulados pesados (Vacas)"
+          "Felis": "Felinos (Gatos, Tigres, Panteras)",
+          "Canis": "Caninos (Lobos, Raposas, Hienas)",
+          "Ursus": "Ursos ou bípedes peludos pesados (Gek-like gigantes)",
+          "Rodentia": "Roedores, castores, esquilos gigantes",
+          "Bos": "Ungulados pesados (Vacas, Bisões, Hipopótamos)",
+          "Prion": "Ungulados leves (Cervos, Antílopes, Gazelas)",
+          "Hippus": "Equinos ou criaturas de 6 pernas rápidas"
         },
         "repteis_dinos": {
-          "Theroma": "Bípedes carnívoros (T-Rex)",
-          "Sauros": "Pescoçudos (Diplos)",
-          "Reptil": "Lagartos genéricos",
-          "Testudo": "Tartarugas"
+          "Theroma": "Bípedes carnívoros (T-Rex, Raptores)",
+          "Sauros": "Pescoçudos (Diplos) e saurópodes gigantes",
+          "Reptil": "Lagartos genéricos, iguanas",
+          "Crocodylus": "Rastejantes baixos, crocodilos, salamandras",
+          "Testudo": "Tartarugas e animais com carapaça nas costas"
         },
-        "insetoides": {
-          "Mantis": "Louva-a-deus",
-          "Scarab": "Besouros, caranguejos",
-          "Aranea": "Aranhas",
-          "Insecta": "Genérico"
+        "insetoides_artropodes": {
+          "Mantis": "Louva-a-deus ou corpo ereto com garras",
+          "Scarab": "Besouros terrestres e caranguejos-aranha",
+          "Aranea": "Aranhas ou criaturas com múltiplas pernas finas",
+          "Insecta": "Genérico (Borboletas terrestres, baratas alienígenas)",
+          "Scolopendra": "Centopeias ou criaturas longas segmentadas"
+        },
+        "estranhos_anomalos": {
+          "Proto": "Proto-Geks (bípedes pequenos com bico e olhos grandes)",
+          "Blob": "Massas amorfas, gelatinas saltitantes",
+          "Mechanoceris": "Fauna Mecânica / Robótica (Horizon)",
+          "Vermis": "Minhocas de areia ou enguias terrestres",
+          "Mole": "Criaturas toupeira ou escavadoras",
+          "Glitch": "Criaturas de energia ou formas geométricas flutuantes"
+        },
+        "voadores": {
+          "Avis": "Pássaros tradicionais",
+          "Draco": "Dragões, morcegos grandes, lagartos alados",
+          "Pterys": "Répteis voadores tipo Pterodáctilo",
+          "Vermis Caelum": "Cobras/Enguias voadoras",
+          "Insecta Volans": "Besouros voadores ou mariposas gigantes"
         }
       },
+
       "fauna_hibrida_planta": {
         "fitofauna": {
           "Phytos": "Genérico / Arbusto com pernas",
           "Arbor": "Árvore Andante / Ent",
-          "Folium": "Montanha de folhas andante",
-          "Florus": "Criatura com flor gigante",
-          "Radix": "Raiz/Nabo andante",
-          "Cactus": "Cacto andante"
+          "Folium": "Montanha de folhas andante / Samambaia viva",
+          "Florus": "Criatura com flor gigante no corpo/cabeça",
+          "Radix": "Raiz/Nabo andante ou tubérculo",
+          "Cactus": "Cacto andante",
+          "Fungus": "Criatura cogumelo ou infestada por fungos"
         },
         "sufixos_vegetais": {
           "Ambulo": "Que anda/caminha",
-          "Mimic": "Camuflagem perfeita",
-          "Spora": "Solta esporos/pólen",
-          "Viridis": "Verde intenso"
+          "Mimic": "Camuflagem perfeita (parece planta imóvel quando parado)",
+          "Spora": "Solta esporos ou pólen visível",
+          "Viridis": "Verde intenso / Fotossintético",
+          "Radicatus": "Parece enraizado ou muito lento"
         }
       },
+
       "fauna_marinha": {
         "peixes_tubaroes": {
           "Piscis": "Peixe Comum",
-          "Selach": "Tubarão",
-          "Anguilla": "Enguia"
+          "Selach": "Tubarão / Predador hidrodinâmico",
+          "Anguilla": "Enguia / Cobra marinha",
+          "Hippocampus": "Cavalos-marinhos gigantes"
         },
-        "invertebrados": {
-          "Medusa": "Água-viva",
-          "Cochlea": "Caracol",
-          "Teuthis": "Lula/Polvo"
+        "invertebrados_moluscos": {
+          "Medusa": "Água-viva / Cnidários",
+          "Cochlea": "Caracol / Concha espiral",
+          "Bivalvia": "Ostras / Conchas que abrem e fecham",
+          "Teuthis": "Lula / Polvo / Tentáculos",
+          "Crustacea": "Caranguejos de fundo / Lagostas"
+        },
+        "mamiferos_grandes": {
+          "Cetus": "Baleias / Grandes mamíferos aquáticos",
+          "Sirenia": "Vacas-marinhas / Peixes-boi alienígenas"
+        },
+        "especiais": {
+          "Abyss": "Horror Abissal (Olho hipnótico)",
+          "Manta": "Arraias e planadores subaquáticos"
         }
       },
+
       "sufixos_descritivos": {
         "comportamento": {
-          "Ferox": "Agressivo",
-          "Pacis": "Pacífico",
-          "Sapiens": "Inteligente"
+          "Ferox": "Agressivo / Predador ativo",
+          "Pacis": "Pacífico / Dócil",
+          "Timidus": "Arisco / Foge rapidamente",
+          "Sapiens": "Inteligente / Social (acena para o jogador)",
+          "Venator": "Espreita a presa (Stalker)",
+          "Gregarius": "Anda em bandos/cardumes"
         },
-        "visual": {
-          "Titan": "Gigante",
-          "Lumen": "Brilha",
-          "Chroma": "Colorido"
+        "dieta": {
+          "Vorax": "Carnívoro insaciável",
+          "Herba": "Herbívoro",
+          "Saxum": "Geofágico (Come pedras)",
+          "Copros": "Come fezes/mordita"
+        },
+        "habitat": {
+          "Noctis": "Noturno",
+          "Cavernae": "Subterrâneo / De caverna",
+          "Polaris": "De regiões polares/frias",
+          "Vulcan": "De regiões vulcânicas"
+        },
+        "visual_fisico": {
+          "Titan": "Gigantesco (acima de 6m)",
+          "Micro": "Minúsculo",
+          "Lumen": "Bioluminescente / Brilha no escuro",
+          "Chroma": "Colorido / Vibrante",
+          "Armatus": "Blindado / Com placas ósseas",
+          "Spina": "Com espinhos proeminentes",
+          "Cornutus": "Com chifres grandes",
+          "Monoculus": "Um olho só (Ciclope)",
+          "Polyoculus": "Muitos olhos"
         }
       },
+
       "lexico_inspiracao": {
-        "agressivo_perigoso": [ "Ferox", "Terror", "Dread", "Bane", "Hunter", "Slayer", "Carnis", "Vorax", "Grim", "Savage" ],
-        "rapido_agil": [ "Velox", "Celer", "Swift", "Dash", "Bolt", "Flash", "Sonic", "Rapid", "Sprint", "Rush" ],
-        "defensivo_tanque": [ "Bastion", "Shield", "Wall", "Armatus", "Iron", "Solid", "Guard", "Shell", "Fortress", "Tank" ],
-        "estranho_alienigena": [ "Xeno", "Weird", "Eldritch", "Morph", "Glitch", "Anomaly", "Odd", "Twisted", "Vortex", "Dream" ]
+        "agressivo_perigoso": [ "Ferox", "Terror", "Dread", "Bane", "Hunter", "Slayer", "Carnis", "Vorax", "Grim", "Savage", "Widow", "Reaper" ],
+        "rapido_agil": [ "Velox", "Celer", "Swift", "Dash", "Bolt", "Flash", "Sonic", "Rapid", "Sprint", "Rush", "Zephyr" ],
+        "defensivo_tanque": [ "Bastion", "Shield", "Wall", "Armatus", "Iron", "Solid", "Guard", "Shell", "Fortress", "Tank", "Bunker" ],
+        "estranho_alienigena": [ "Xeno", "Weird", "Eldritch", "Morph", "Glitch", "Anomaly", "Odd", "Twisted", "Vortex", "Dream", "Void", "Echo" ],
+        "elemental": [ "Ignis", "Cryo", "Tox", "Rad", "Volt", "Spark", "Magma", "Frost", "Glow" ]
       }
     },
     "botanica": {

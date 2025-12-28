@@ -1,5 +1,7 @@
 # Nome do arquivo: abas.py
 import streamlit as st
+import pandas as pd
+
 
 # --- FUNÇÃO PARA A ABA DE SISTEMAS ---
 def exibir_sistemas(data):
@@ -7,12 +9,12 @@ def exibir_sistemas(data):
     st.subheader(f"📡 {p['nome_protocolo']}")
     st.info(f"Formato: `{p['formato']}`")
     
-    sub_t1, sub_t2, sub_t3 = st.tabs(["Temas & Cores", "Tática & Economia", "💡 Léxico"])
+    sub_t1, sub_t2, sub_t3 = st.tabs(["Temas & Cores", "Tática & Economia", "Léxico"])
     
     with sub_t1:
         for star_class, themes in p["temas_por_classe_estelar"].items():
             clean_name = star_class.replace("_", " ").title()
-            with st.expander(f"⭐ {clean_name}", expanded=False):
+            with st.expander(f"{clean_name}", expanded=False):
                 st.markdown(" ".join([f"`{t}`" for t in themes]))
 
     with sub_t2:
@@ -23,20 +25,20 @@ def exibir_sistemas(data):
             cols[i % 3].markdown(f"**`{k}`** : {v}")
             
         st.divider()
-        with st.expander("🏭 Tipos de Economia (Siglas)", expanded=True):
+        with st.expander("🏭 Tipos de Economia", expanded=True):
             for k, v in tacs["tipo_economia"].items():
                 st.markdown(f"- **`{k}`**: {v}")
                 
         with st.expander("💰 Tiers de Economia", expanded=False):
             for k, v in tacs["economia_tier"].items():
-                st.markdown(f"- **Nível {k}**: {v}")
+                st.markdown(f"- **{k}**: {v}")
 
     with sub_t3:
         st.markdown("### Inspiração para Nomes")
         lex = p.get("lexico_inspiracao", {})
         for cat, terms in lex.items():
             with st.expander(cat.replace("_", " ").upper()):
-                st.code(", ".join(terms), language="text")
+                st.markdown(" ".join([f"`{t}`" for t in terms]), language="text")
 
 # --- FUNÇÃO PARA A ABA DE PLANETAS ---
 def exibir_planetas(data):
@@ -44,12 +46,22 @@ def exibir_planetas(data):
     st.subheader(f"🌍 {p['nome_protocolo']}")
     st.info(f"Formato: `{p['formato']}`")
     
-    sub_t1, sub_t2 = st.tabs(["Códigos de Bioma", "💡 Léxico"])
+    sub_t1, sub_t2 = st.tabs(["Biomas & Códigos", "Léxico"])
     
     with sub_t1:
-        st.table(p["codigos_bioma"])
-        if "sufixos_adicionais" in p:
-            st.write("Sufixos Extras:", p["sufixos_adicionais"])
+        df_biomas = pd.DataFrame(
+            list(p["codigos_bioma"].items()),
+            columns=["Código de Bioma", "Descrição"]
+        )
+        st.table(df_biomas)
+        
+    if "sufixos_adicionais" in p:
+        st.markdown("#### Sufixos Extras")
+        df_sufixos = pd.DataFrame(
+            list(p["sufixos_adicionais"].items()),
+            columns=["Sufixo", "Descrição"]
+        )
+        st.table(df_sufixos)  
             
     with sub_t2:
         st.markdown("### Inspiração por Bioma")
@@ -62,16 +74,21 @@ def exibir_planetas(data):
 def exibir_bases(data):
     p = data["protocolos"]["bases"]
     st.subheader(f"🏰 {p['nome_protocolo']}")
-    st.markdown(f"*{p['descricao']}*") # Adicionei a descrição aqui
-    st.table(p["codigos_funcao"])
+    st.info(f"Formato: `{p['formato']}`")
+    
+    df_bases = pd.DataFrame(
+        list(p["codigos_funcao"].items()),
+        columns=["Código", "Função"]
+    )
+    st.table(df_bases)
 
 # --- FUNÇÃO PARA A ABA DE FAUNA ---
 def exibir_fauna(data):
     p = data["protocolos"]["xenobiologia"]
     st.subheader(f"🧬 {p['nome_protocolo']}")
-    st.warning(f"Formato: `{p['formato']}`")
+    st.info(f"Formato: `{p['formato']}`")
     
-    bt1, bt2, bt3, bt4, bt5 = st.tabs(["Terrestre", "Fito-Fauna", "Marinha", "Sufixos", "💡 Léxico"])
+    bt1, bt2, bt3, bt4, bt5 = st.tabs(["Terrestre", "Fito-Fauna", "Marinha", "Sufixos", "Léxico"])
     
     with bt1:
         st.markdown("#### 🐾 Fauna Terrestre")

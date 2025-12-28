@@ -17,7 +17,7 @@ utils.aplicar_estilo()
 data = utils.carregar_dados()
 
 # Título Principal
-st.title("💠 Telamon Interface")
+st.title("💠 Interface - Sistema de Nomenclatura 💠")
 
 # Se os dados não carregarem, paramos por aqui para evitar erros
 if not data:
@@ -28,6 +28,7 @@ with st.sidebar:
     st.header("👤 Perfil")
     meta = data.get("meta_dados", {})
     st.write(f"**Usuário:** {meta.get('usuario')}")
+    st.write(f"**Título:** {meta.get('titulo')}")  
     st.write(f"**Status:** {meta.get('status')}")
     st.caption(f"Versão: {meta.get('versao_protocolo')}")
 
