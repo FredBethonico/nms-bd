@@ -43,9 +43,42 @@
         }
       },
       "lexico_inspiracao": {
-        "caos_desordem": [ "Entropy", "Discordia", "Havoc", "Tumultus", "Bedlam", "Anarchy", "Rupture", "Fractal", "Noise", "Flux" ],
-        "ordem_divindade": [ "Zenith", "Apex", "Sanctum", "Aeterna", "Divinus", "Ordo", "Prime", "Alpha", "Omega", "Regnum" ],
-        "vazio_espaco": [ "Void", "Abyss", "Nihil", "Vacuum", "Hollow", "Null", "Zero", "Deep", "Silence", "Echo" ]
+        "caos_desordem": [
+          "Entropy", "Discordia", "Havoc", "Tumultus", "Bedlam", "Anarchy", "Rupture", "Fractal", "Noise", "Flux",
+          "Chaos", "Eris", "Polemos", "Ran", "Konton", "Ragnarok", "Pandemonium", "Turbare", "Clades", "Barbarus",
+          "Vandal", "Crisis", "Schism", "Fragmentum", "Dissolutio", "Kali", "Pralaya", "Storm", "Vortex", "Maelstrom",
+          "Riot", "Rebellio", "Seditio", "Insurrectio", "Nemesis", "Typhon", "Disaster", "Cataclysm", "Ravage", "Bane"
+        ],
+        "ordem_divindade": [
+          "Zenith", "Apex", "Sanctum", "Aeterna", "Divinus", "Ordo", "Prime", "Alpha", "Omega", "Regnum",
+          "Imperium", "Pax", "Basileus", "Dominus", "Kaiser", "Raja", "Ten", "Kami", "Deus", "Theos",
+          "Cosmos", "Harmonia", "Justitia", "Lex", "Mandatum", "Sovereign", "Majestas", "Gloria", "Sacrum", "Templum",
+          "Olympos", "Valhalla", "Nirvana", "Zion", "Arcana", "Providentia", "Auctoritas", "Dynastia", "Crown", "Throne"
+        ],
+        "vazio_espaco": [
+          "Void", "Abyss", "Nihil", "Vacuum", "Hollow", "Null", "Zero", "Deep", "Silence", "Echo",
+          "Inane", "Tenebrae", "Obscurum", "Kenon", "Erebus", "Sunyata", "Akasha", "Mu", "Ku", "Ginnungagap",
+          "Aether", "Caverna", "Chasm", "Nadir", "Oblivion", "Vanish", "Absentia", "Desolatio", "Barathrum", "Profundis",
+          "Umbra", "Penumbra", "Eclipse", "Blank", "Gap", "Lacuna", "Hiatus", "Néant", "Vácuo", "Nada"
+        ],
+        "tempo_memoria": [
+          "Chronos", "Tempus", "Aevum", "Aeon", "Kairos", "Era", "Seculum", "Hora", "Momentum", "Memoria",
+          "Mnemosyne", "Historia", "Legacy", "Heritage", "Ancestral", "Priscus", "Vetus", "Retro", "Futurum", "Destiny",
+          "Fatum", "Kismet", "Karma", "Samsara", "Loop", "Cyclus", "Revolutio", "Perpetua", "Immortal", "Infinity",
+          "Terminus", "Finis", "Initium", "Genesis", "Exodus", "Relic", "Vestigium", "Echoes", "Remnant", "Archive"
+        ],
+        "sabedoria_ciencia": [
+          "Sophia", "Logos", "Ratio", "Mentis", "Cognitio", "Scientia", "Gnosis", "Veda", "Sutra", "Dharma",
+          "Intellectus", "Sapientia", "Eruditio", "Academia", "Library", "Codex", "Index", "Matrix", "Logic", "Reason",
+          "Theorem", "Axiom", "Paradigm", "Schema", "Theory", "Thesis", "Synthesis", "Analysis", "Quantum", "Neural",
+          "Cortex", "Synapse", "Data", "Veritas", "Aletheia", "Lumen", "Illuminati", "Sage", "Oracle", "Vision"
+        ],
+        "caminho_exploracao": [
+          "Viator", "Iter", "Nauta", "Peregrinus", "Odyssey", "Quest", "Venture", "Routa", "Via", "Semita",
+          "Horizon", "Frontier", "Boundary", "Limit", "Expanse", "Reach", "Vector", "Compass", "Astrolabe", "Sextant",
+          "Drift", "Flow", "Current", "Tide", "Nomad", "Vagabond", "Drifter", "Ranger", "Scout", "Pioneer",
+          "Colonist", "Settler", "Pilgrim", "Voyager", "Argonaut", "Pathfinder", "Trail", "Passage", "Gateway", "Portal"
+        ]
       }
     },
     "planetas": {
@@ -66,12 +99,42 @@
         "-X": "Tempestades Extremas"
       },
       "lexico_inspiracao": {
-        "quente_fogo": [ "Ignis", "Pyro", "Scorch", "Cinder", "Ash", "Ember", "Furnace", "Magma", "Calor", "Vulcan" ],
-        "frio_gelo": [ "Cryo", "Gelu", "Nix", "Frost", "Winter", "Borealis", "Glacies", "Shiver", "Zero", "Algor" ],
-        "toxico_doenca": [ "Venenum", "Tox", "Miasma", "Blight", "Virus", "Plague", "Acid", "Bile", "Rot", "Noxious" ],
-        "radioativo_mutante": [ "Radix", "Gamma", "Atom", "Decay", "Isotope", "Flux", "Glow", "Neon", "Half-Life", "Nucleus" ],
-        "arido_deserto": [ "Arida", "Dust", "Dune", "Grit", "Barren", "Waste", "Siccus", "Sands", "Thirst", "Parched" ],
-        "exuberante_vida": [ "Gaia", "Eden", "Vita", "Verdant", "Bloom", "Grove", "Oasis", "Haven", "Arcadia", "Lush" ]
+        "quente_fogo": [
+          "Ignis", "Pyro", "Scorch", "Cinder", "Ash", "Ember", "Furnace", "Magma", "Calor", "Vulcan",
+          "Agni", "Flamma", "Muspel", "Enjou", "Kaustikos", "Brasa", "Inferno", "Surtr", "Aestus", "Incendium",
+          "Pyr", "Ifrit", "Ardente", "Sol", "Tejas", "Homura", "Vulcanus", "Fuego", "Torridus", "Dahana",
+          "Vesta", "Hestia", "Ardor", "Favilla", "Tanur", "Kasai", "Brûlé", "Fervens", "Pyra", "Helios"
+        ],
+        "frio_gelo": [
+          "Cryo", "Gelu", "Nix", "Frost", "Winter", "Borealis", "Glacies", "Shiver", "Zero", "Algor",
+          "Frigus", "Hima", "Niflheim", "Yuki", "Kryos", "Bruma", "Jökull", "Hibernus", "Tushara", "Fubuki",
+          "Pagos", "Skadi", "Gelidus", "Glacialis", "Nieves", "Isaz", "Polus", "Arctos", "Hyoga", "Cheimon",
+          "Alba", "Yeti", "Nieve", "Pruina", "Stig", "Khione", "Thule", "Vinter", "Eiss", "Rime"
+        ],
+        "toxico_doenca": [
+          "Venenum", "Tox", "Miasma", "Blight", "Virus", "Plague", "Acid", "Bile", "Rot", "Noxious",
+          "Pestis", "Doku", "Tabes", "Nosos", "Visha", "Morbus", "Lues", "Acheron", "Styx", "Nocivus",
+          "Veneno", "Peste", "Malaria", "Nekros", "Septic", "Bane", "Mukus", "Infectus", "Contagio", "Palus",
+          "Venin", "Rancid", "Livor", "Sanies", "Pus", "Fungus", "Limas", "Karkinos", "Virus", "Moulder"
+        ],
+        "radioativo_mutante": [
+          "Radix", "Gamma", "Atom", "Decay", "Isotope", "Flux", "Glow", "Neon", "Half-Life", "Nucleus",
+          "Mutatio", "Aktis", "Ion", "Becquerel", "Curie", "Chernobyl", "Fulgur", "Radius", "Solaris", "Lumina",
+          "Prism", "Spectrum", "Quantum", "Fission", "Fusion", "Roentgen", "Zircon", "Urania", "Pluton", "Cobalt",
+          "Radium", "Aberratio", "Monstrum", "Hikai", "Var", "Strale", "Lucifer", "Phos", "Vis", "Aura"
+        ],
+        "arido_deserto": [
+          "Arida", "Dust", "Dune", "Grit", "Barren", "Waste", "Siccus", "Sands", "Thirst", "Parched",
+          "Arena", "Sahara", "Erimos", "Maru", "Sabaku", "Pulvis", "Vastitas", "Xeros", "Wadi", "Deserta",
+          "Sterilis", "Suna", "Atacama", "Kalahari", "Gobi", "Mojave", "Petra", "Saxum", "Siccitas", "Nuda",
+          "Khali", "Solitudo", "Terra", "Aestus", "Seco", "Polvo", "Arenosus", "Dhanva", "Qum", "Namib"
+        ],
+        "exuberante_vida": [
+          "Gaia", "Eden", "Vita", "Verdant", "Bloom", "Grove", "Oasis", "Haven", "Arcadia", "Lush",
+          "Bios", "Silva", "Jiva", "Mori", "Avalon", "Natura", "Chloros", "Nemus", "Pratum", "Vana",
+          "Inochi", "Viridis", "Floresta", "Jardim", "Shangri-La", "Elysium", "Nirvana", "Zoon", "Organica", "Fertilis",
+          "Herba", "Primavera", "Folium", "Arbor", "Selva", "Bosque", "Virens", "Germen", "Chlōra", "Tellus"
+        ]
       }
     },
     "bases": {
@@ -216,7 +279,8 @@
         "rapido_agil": [ "Velox", "Celer", "Swift", "Dash", "Bolt", "Flash", "Sonic", "Rapid", "Sprint", "Rush", "Zephyr" ],
         "defensivo_tanque": [ "Bastion", "Shield", "Wall", "Armatus", "Iron", "Solid", "Guard", "Shell", "Fortress", "Tank", "Bunker" ],
         "estranho_alienigena": [ "Xeno", "Weird", "Eldritch", "Morph", "Glitch", "Anomaly", "Odd", "Twisted", "Vortex", "Dream", "Void", "Echo" ],
-        "elemental": [ "Ignis", "Cryo", "Tox", "Rad", "Volt", "Spark", "Magma", "Frost", "Glow" ]
+        "elemental": [ "Ignis", "Cryo", "Tox", "Rad", "Volt", "Spark", "Magma", "Frost", "Glow" ],
+        "cores": [ "Crimson", "Azure", "Emerald", "Amber", "Onyx", "Ivory", "Jade", "Sapphire", "Ruby", "Obsidian", "Topaz" ],
       }
     },
     "botanica": {
