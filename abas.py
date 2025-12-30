@@ -38,7 +38,7 @@ def exibir_sistemas(data):
         lex = p.get("lexico_inspiracao", {})
         for cat, terms in lex.items():
             with st.expander(cat.replace("_", " ").upper()):
-                st.markdown(" ".join([f"`{t}`" for t in terms]), language="text")
+                st.code(", ".join(terms), language="text")
 
 # --- FUNÇÃO PARA A ABA DE PLANETAS ---
 def exibir_planetas(data):
