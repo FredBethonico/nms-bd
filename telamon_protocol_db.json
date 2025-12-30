@@ -280,7 +280,7 @@
         "defensivo_tanque": [ "Bastion", "Shield", "Wall", "Armatus", "Iron", "Solid", "Guard", "Shell", "Fortress", "Tank", "Bunker" ],
         "estranho_alienigena": [ "Xeno", "Weird", "Eldritch", "Morph", "Glitch", "Anomaly", "Odd", "Twisted", "Vortex", "Dream", "Void", "Echo" ],
         "elemental": [ "Ignis", "Cryo", "Tox", "Rad", "Volt", "Spark", "Magma", "Frost", "Glow" ],
-        "cores": [ "Crimson", "Azure", "Emerald", "Amber", "Onyx", "Ivory", "Jade", "Sapphire", "Ruby", "Obsidian", "Topaz" ],
+        "cores": [ "Crimson", "Azure", "Emerald", "Amber", "Onyx", "Ivory", "Jade", "Sapphire", "Ruby", "Obsidian", "Topaz" ]
       }
     },
     "botanica": {
