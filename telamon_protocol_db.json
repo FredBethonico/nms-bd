@@ -3,7 +3,7 @@
     "usuario": "Fred 'Anarquinho'",
     "titulo": "Iteração Anômala",
     "status": "Explorando as paisagens do Atlas",
-    "versao_protocolo": "7.0 (User Build)",
+    "versao_protocolo": "7.3 (User Build)",
     "prefixo_global": "ANR"
   },
   "protocolos": {
@@ -84,7 +84,7 @@
     "planetas": {
       "nome_protocolo": "Protocolo Ouroboros",
       "descricao": "Identificação das características principais do planeta.",
-      "formato": "ANR // [Nome Criativo] [Código Bioma]",
+      "formato": "ANR // [Nome Criativo] [Código Bioma]-[Sufixo Adicional]",
       "codigos_bioma": {
         "I": "Exuberante / Paraíso",
         "II": "Tóxico / Fúngico",
@@ -96,7 +96,9 @@
       },
       "sufixos_adicionais": {
         "-A": "Agressivo",
-        "-X": "Tempestades Extremas"
+        "-X": "Tempestades Extremas",
+        "-D": "Dissonante",
+        "-I": "Infestado/Vil"
       },
       "lexico_inspiracao": {
         "quente_fogo": [
@@ -134,6 +136,14 @@
           "Bios", "Silva", "Jiva", "Mori", "Avalon", "Natura", "Chloros", "Nemus", "Pratum", "Vana",
           "Inochi", "Viridis", "Floresta", "Jardim", "Shangri-La", "Elysium", "Nirvana", "Zoon", "Organica", "Fertilis",
           "Herba", "Primavera", "Folium", "Arbor", "Selva", "Bosque", "Virens", "Germen", "Chlōra", "Tellus"
+        ],
+        "corrupcao_dissonante": [
+          "Dissonant", "Discord", "Violet", "Echo", "Harmonic", "Shard", "Mirror", "Glass", "Sentinel", "Glitch",
+          "Fracture", "Resonance", "Purple", "Amethyst", "Crystal", "Null", "Interceptor", "Atlantid", "Signal", "Error"
+        ],
+        "infestado_vil": [
+        "Brood", "Hive", "Swarm", "Larva", "Chitin", "Insecta", "Plague", "Nest", "Colony", "Parasite",
+        "Infestation", "Mandible", "Carapace", "Vile", "Grub", "Scourge", "Locust", "Web", "Venom", "Hatchery"
         ]
       }
     },
@@ -143,12 +153,15 @@
       "formato": "ANR // [Nome Criativo] [Código Função]",
       "codigos_funcao": {
         "[HQ]": "Base Principal / Lar",
+        "[PA]": "Posto Avançado / Recarga rápida",
         "[MN]": "Mineração / Extrator",
         "[BIO]": "Fazenda / Estufa",
-        "[PRT]": "Portal / Glifos",
-        "[TRD]": "Comércio",
+        "[PRT]": "Portal",
+        "[TP]": "Teletransporte / Sistemas sem Base Estelar",
+        "[COM]": "Comércio",
         "[LOG]": "Armazém",
-        "[OBS]": "Observatório"
+        "[OBS]": "Observatório",
+        "[RST]": "Descanso / Contemplação"
       }
     },
     "xenobiologia": {
@@ -180,20 +193,23 @@
           "Insecta": "Genérico (Borboletas terrestres, baratas alienígenas)",
           "Scolopendra": "Centopeias ou criaturas longas segmentadas"
         },
-        "estranhos_anomalos": {
-          "Proto": "Proto-Geks (bípedes pequenos com bico e olhos grandes)",
-          "Blob": "Massas amorfas, gelatinas saltitantes",
-          "Mechanoceris": "Fauna Mecânica / Robótica (Horizon)",
-          "Vermis": "Minhocas de areia ou enguias terrestres",
-          "Mole": "Criaturas toupeira ou escavadoras",
-          "Glitch": "Criaturas de energia ou formas geométricas flutuantes"
-        },
         "voadores": {
           "Avis": "Pássaros tradicionais",
           "Draco": "Dragões, morcegos grandes, lagartos alados",
           "Pterys": "Répteis voadores tipo Pterodáctilo",
           "Vermis Caelum": "Cobras/Enguias voadoras",
           "Insecta Volans": "Besouros voadores ou mariposas gigantes"
+        }
+      },
+
+      "fauna_anomala": {
+          "estranhos_anomalos": {
+          "Proto": "Proto-Geks (bípedes pequenos com bico e olhos grandes)",
+          "Blob": "Massas amorfas, gelatinas saltitantes",
+          "Mechanoceris": "Fauna Mecânica / Robótica (Horizon)",
+          "Vermis": "Minhocas de areia ou enguias terrestres",
+          "Mole": "Criaturas toupeira ou escavadoras",
+          "Glitch": "Criaturas de energia ou formas geométricas flutuantes"
         }
       },
 

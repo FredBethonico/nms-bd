@@ -17,7 +17,7 @@ utils.aplicar_estilo()
 data = utils.carregar_dados()
 
 # Título Principal
-st.title("💠 Interface - Sistema de Nomenclatura 💠")
+st.title("💠 Sistema de Nomenclatura 💠")
 
 # Se os dados não carregarem, paramos por aqui para evitar erros
 if not data:
