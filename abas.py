@@ -19,7 +19,6 @@ def exibir_sistemas(data):
 
     with sub_t2:
         tacs = p["codigos_taticos"]
-        st.markdown("##### 👽 Raças")
         cols = st.columns(3)
         for i, (k, v) in enumerate(tacs["raca"].items()):
             cols[i % 3].markdown(f"**`{k}`** : {v}")
