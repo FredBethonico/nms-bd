@@ -9,7 +9,7 @@ def exibir_sistemas(data):
     st.subheader(f"📡 {p['nome_protocolo']}")
     st.info(f"Formato: `{p['formato']}`")
     
-    sub_t1, sub_t2, sub_t3 = st.tabs(["Temas & Cores", "Tática & Economia", "Léxico"])
+    sub_t1, sub_t2 = st.tabs(["Temas & Cores", "Tática & Economia"])
     
     # Tab 1: Temas & Cores
     with sub_t1: 
@@ -33,14 +33,6 @@ def exibir_sistemas(data):
         with st.expander("💰 Tiers de Economia", expanded=True):
             for k, v in tacs["economia_tier"].items():
                 st.markdown(f"- **`{k}`**: {v}")
-
-    # Tab 3: Léxico
-    with sub_t3: 
-        st.markdown("### Inspiração para Nomes")
-        lex = p.get("lexico_inspiracao", {})
-        for cat, terms in lex.items():
-            with st.expander(cat.replace("_", " ").upper()):
-                st.markdown(" ".join([f"`{t}`" for t in terms]))
                
                
                
@@ -50,30 +42,19 @@ def exibir_planetas(data):
     st.subheader(f"🌍 {p['nome_protocolo']}")
     st.info(f"Formato: `{p['formato']}`")
     
-    sub_t1, sub_t2 = st.tabs(["Biomas & Códigos", "Léxico"])
+    df_biomas = pd.DataFrame(
+        list(p["codigos_bioma"].items()),
+        columns=["Código de Bioma", "Descrição"]
+    )
+    st.table(df_biomas)
     
-    with sub_t1:
-        df_biomas = pd.DataFrame(
-            list(p["codigos_bioma"].items()),
-            columns=["Código de Bioma", "Descrição"]
+    if "sufixos_adicionais" in p:
+        st.markdown("#### Sufixos Extras")
+        df_sufixos = pd.DataFrame(
+            list(p["sufixos_adicionais"].items()),
+            columns=["Sufixo", "Descrição"]
         )
-        st.table(df_biomas)
-        
-        if "sufixos_adicionais" in p:
-            st.markdown("#### Sufixos Extras")
-            df_sufixos = pd.DataFrame(
-                list(p["sufixos_adicionais"].items()),
-                columns=["Sufixo", "Descrição"]
-            )
-            st.table(df_sufixos)  
-            
-    with sub_t2:
-        st.markdown("### Inspiração por Bioma")
-        lex = p.get("lexico_inspiracao", {})
-        for cat, terms in lex.items():
-            with st.expander(cat.replace("_", " ").upper()):
-                st.markdown(" ".join([f"`{t}`" for t in terms]))
-       
+        st.table(df_sufixos) 
 
 # --- BASES ---
 def exibir_bases(data):
@@ -99,7 +80,7 @@ def exibir_fauna(data):
     with bt1:
         st.markdown("#### 🐾 Fauna Terrestre")
         for k, v in p["fauna_terrestre"].items():
-            with st.expander(k.title()): 
+            with st.expander(k.replace("_", " ").title()): 
                 st.table(
                     pd.DataFrame(
                         list(v.items()), 
@@ -111,7 +92,7 @@ def exibir_fauna(data):
     with bt2:
         st.markdown("#### 🌿 Fito-Fauna")
         for k, v in p["fauna_hibrida_planta"].items():
-            with st.expander(k.title()): 
+            with st.expander(k.replace("_", " ").title()):  
                 st.table(
                     pd.DataFrame(
                         list(v.items()), 
@@ -123,7 +104,7 @@ def exibir_fauna(data):
     with bt3:
         st.markdown("#### 🌊 Fauna Marinha")
         for k, v in p["fauna_marinha"].items():
-            with st.expander(k.title()): 
+            with st.expander(k.replace("_", " ").title()):  
                 st.table(
                     pd.DataFrame(
                         list(v.items()), 
@@ -135,7 +116,7 @@ def exibir_fauna(data):
     with bt4:
         st.markdown("#### 🏷️ Sufixos")
         for k, v in p["sufixos_descritivos"].items():
-            with st.expander(k.title()): 
+            with st.expander(k.replace("_", " ").title()):  
                 st.table(
                     pd.DataFrame(
                         list(v.items()), 
@@ -148,18 +129,52 @@ def exibir_fauna(data):
         st.markdown("### Inspiração para Criaturas")
         lex = p.get("lexico_inspiracao", {})
         for cat, terms in lex.items():
-            with st.expander(cat.replace("_", " ").upper()):
+            with st.expander(cat.replace("_", " ").title()): 
                 st.markdown(" ".join([f"`{t}`" for t in terms]))
                 
-# --- RECURSOS ---
-def exibir_recursos(data):
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("### 🌿 Botânica (Gaia)")
-        for k, v in data["protocolos"]["botanica"]["categorias"].items():
-            st.markdown(f"- **{k}**: {v}")
+# --- LEXICO ---
+def lexico_criativo(data):
+    p = data["protocolos"]["lexico_inspiracao_sistemas_mundos"]
+    st.subheader("✒️ Léxico Criativo")
             
-    with col2:
-        st.markdown("### 🪨 Geologia (Lithos)")
-        for k, v in data["protocolos"]["geologia"]["categorias"].items():
-            st.markdown(f"- **{k}**: {v}")
+    t1, t2, t3, t4, t5 = st.tabs(["Tematicos", "Biomas", "Economia", "Conflito", "Lore"])
+    
+    # Tab 1: Temáticos
+    with t1:
+        st.markdown("### Temáticos")
+        lex = p.get("tematicos", {})
+        for cat, terms in lex.items():
+            with st.expander(cat.replace("_", " ").title()): 
+                st.markdown(" ".join([f"`{t}`" for t in terms]))
+    
+    # Tab 2: Biomas
+    with t2:
+        st.markdown("### Biomas")
+        lex = p.get("biomas", {})
+        for cat, terms in lex.items():
+            with st.expander(cat.replace("_", " ").title()):
+                st.markdown(" ".join([f"`{t}`" for t in terms]))
+    
+    # Tab 3: Economia
+    with t3:
+        st.markdown("### Economia")
+        lex = p.get("economia", {})
+        for cat, terms in lex.items():
+            with st.expander(cat.replace("_", " ").title()):
+                st.markdown(" ".join([f"`{t}`" for t in terms]))
+    
+    # Tab 4: Conflito
+    with t4:
+        st.markdown("### Conflito")
+        lex = p.get("conflito", {})
+        for cat, terms in lex.items():
+            with st.expander(cat.replace("_", " ").title()):
+                st.markdown(" ".join([f"`{t}`" for t in terms]))
+                
+    # Tab 5: Lore
+    with t5:
+        st.markdown("### Lore")
+        lex = p.get("lore", {})
+        for cat, terms in lex.items():
+            with st.expander(cat.replace("_", " ").title()):
+                st.markdown(" ".join([f"`{t}`" for t in terms]))

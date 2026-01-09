@@ -39,7 +39,7 @@ tab_sys, tab_plan, tab_base, tab_bio, tab_res = st.tabs([
     "🪐 Planetas", 
     "🏠 Bases", 
     "🧬 Fauna", 
-    "⛏️ Recursos"
+    "✒️ Lexico Criativo"
 ])
 
 # 5. Preenchimento das Abas
@@ -57,7 +57,7 @@ with tab_bio:
     abas.exibir_fauna(data)
 
 with tab_res:
-    abas.exibir_recursos(data)
+    abas.lexico_criativo(data)
 
 # Rodapé
 st.divider()
