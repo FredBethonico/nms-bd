@@ -98,7 +98,8 @@
         "-A": "Agressivo",
         "-X": "Tempestades Extremas",
         "-D": "Dissonante",
-        "-I": "Infestado/Vil"
+        "-I": "Infestado",
+        "-V": "Vil"
       },
       "lexico_inspiracao": {
         "quente_fogo": [
