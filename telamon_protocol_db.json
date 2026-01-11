@@ -301,68 +301,101 @@
       },
       "economia": {
         "mineracao_extracao": [
-          "Fodina", "Petra", "Core", "Deep", "Excavator", "Mineralis", "Lode", "Shaft", "Geo", "Strata",
-          "Rock", "Quarry", "Drill", "Lithos", "Carbon", "Ore", "Pit", "Crust", "Mantle", "Digger"
+          "Fodina", "Lithos", "Saxum", "Chthonic", "Profundis", "Geo", "Strata", "Oryktos", "Metalla", "Lapis",
+          "Kouzan", "Berg", "Grube", "Khanitra", "Telluris", "Subterra", "Cavum", "Fossa", "Rochedo", "Minério",
+          "Mantle", "Crust", "Magma", "Petrus", "Basalt", "Granite", "Vein", "Lode", "Silex", "Terra"
         ],
         "manufatura_industria": [
-          "Fabrica", "Industria", "Forge", "Anvil", "Ferrum", "Steel", "Construct", "Assembly", "Gear", "Hammer",
-          "Smith", "Works", "Foundry", "Metal", "Heavy", "Iron", "Press", "Machina", "Steam", "Factory"
+          "Fabrica", "Opus", "Malleus", "Ferrum", "Hephaestus", "Vulcan", "Siderurgica", "Tekton", "Structura", "Machinatio",
+          "Kojo", "Hagane", "Smiðja", "Artifex", "Molde", "Forja", "Bigorna", "Engrenagem", "Construct", "Assembly",
+          "Titan", "Cyclops", "Brokkr", "Eitri", "Foundry", "Mechanism", "Engine", "Motor", "Piston", "Fulcrum"
         ],
         "tecnologia_hitech": [
-          "Cyber", "Tech", "Nexus", "Circuit", "Silicon", "Node", "Data", "Logic", "Synth", "Nano",
-          "Chip", "Grid", "Digital", "Code", "Binary", "System", "Mainframe", "Cortex", "Link", "Net"
+          "Nexus", "Cybernetica", "Ratio", "Logos", "Synapse", "Cortex", "Futurum", "Novus", "Virtua", "Matrix",
+          "Dennou", "Mirai", "Yantra", "Vijnana", "Positron", "Quantum", "Silício", "Rede", "Circuito", "Nó",
+          "Automata", "Android", "Bion", "Neural", "Datastream", "Algorithm", "Binary", "Cipher", "Protocol", "Systema"
         ],
         "energia_forca": [
-          "Volt", "Reactor", "Dynamo", "Plasma", "Surge", "Flux", "Battery", "Ampere", "Spark", "Fusion",
-          "Power", "Cell", "Grid", "Charge", "Bolt", "Lightning", "Generator", "Joule", "Energy", "Thunder"
+          "Vis", "Potentia", "Dynamis", "Energeia", "Fulgur", "Lumen", "Plasma", "Aether", "Ignis", "Sol",
+          "Shakti", "Prana", "Hikari", "Kaminari", "Raijin", "Zeus", "Thor", "Tonnerre", "Foudre", "Raio",
+          "Reactor", "Fusion", "Fission", "Joule", "Watt", "Tesla", "Surge", "Flux", "Core", "Radiance"
         ],
         "cientifico_pesquisa": [
-          "Scientia", "Lab", "Axiom", "Theory", "Gnosis", "Ratio", "Quantum", "Helix", "Research", "Nova",
-          "Eureka", "Study", "Mind", "Brain", "Thesis", "Formula", "Atom", "Molecule", "Scope", "Observatory"
+          "Scientia", "Gnosis", "Sophia", "Episteme", "Cognitio", "Veritas", "Scrutinum", "Observatorium", "Specula", "Axiom",
+          "Kenkyu", "Chie", "Veda", "Vidya", "Odin", "Thoth", "Athena", "Minerva", "Sábio", "Mente",
+          "Cosmos", "Hubble", "Theory", "Hypothesis", "Thesis", "Paradigm", "Quasar", "Pulsar", "Nebula", "Helix"
         ],
         "comercio_troca": [
-          "Emporium", "Mercator", "Bazaar", "Trade", "Asset", "Guild", "Ledger", "Valor", "Port", "Exchange",
-          "Market", "Gold", "Coin", "Profit", "Stock", "Capital", "Bank", "Vault", "Rich", "Fortune"
+          "Emporium", "Mercator", "Agora", "Forum", "Lucrum", "Pecunia", "Plutos", "Gazeta", "Cambio", "Valor",
+          "Shonia", "Artha", "Vanik", "Hermes", "Mercury", "Ebisu", "Kaupang", "Rota", "Porto", "Capital",
+          "Guilda", "Tesouro", "Cofre", "Ledger", "Asset", "Dividend", "Specie", "Bullion", "Mint", "Vault"
         ],
         "materiais_alquimia": [
-          "Alchemy", "Alloy", "Fusion", "Polymer", "Refiner", "Materia", "Synthesis", "Composite", "Amalgam", "Flux",
-          "Chemistry", "Liquid", "Acid", "Base", "Solvent", "Mix", "Compound", "Element", "Transmute", "Matter"
+          "Alchimia", "Materia", "Elementum", "Transmutatio", "Solutio", "Coagula", "Azoth", "Elixir", "Quintessencia", "Aether",
+          "Rasa", "Kimiya", "Hermetic", "Catalyst", "Reagent", "Amalgam", "Fluxo", "Essência", "Composto", "Fusão",
+          "Isotope", "Molecule", "Atomos", "Bond", "Valence", "Polymer", "Synthetica", "Fluid", "Crystal", "Ore"
         ]
       },
-      "conflito": {
+      "conflito_ameaca": {
         "nivel_1_pacifico": [
-          "Pax", "Haven", "Sanctuary", "Calm", "Serene", "Quiet", "Safe", "Garden", "Eden", "Arcadia",
-          "Halcyon", "Tranquil", "Oasis", "Rest", "Silent", "Peace", "Shelter", "Still", "Placid", "Harmony"
+          "Pax", "Sanctuarium", "Elysium", "Nirvana", "Halcyon", "Arcadia", "Concordia", "Otium", "Serenitas", "Indra",
+          "Heiwa", "Shanti", "Eden", "Oasis", "Refugium", "Asylum", "Harmonia", "Silence", "Stillness", "Zen",
+          "Aman", "Slaim", "Utopia", "Calmaria", "Placido", "Requiem", "Solace", "Shelter", "Aegis", "Foedus"
         ],
         "nivel_2_medio": [
-          "Guard", "Watch", "Vigil", "Alert", "Border", "Frontier", "Unease", "Tension", "Stand", "Defiant",
-          "Wary", "Shield", "Patrol", "Sentry", "Brisk", "Active", "Ready", "Steady", "Pulse", "Caution"
+          "Vigil", "Custos", "Praesidium", "Limes", "Frontier", "Bastion", "Sentinela", "Keikai", "Raksha", "Wary",
+          "Defensor", "Scutum", "Shield", "Guardia", "Patrol", "Sentry", "Border", "Limite", "Tensio", "Alert",
+          "Monitor", "Ranger", "Warden", "Garrison", "Fortis", "Stand", "Watch", "Ready", "Caution", "Pulse"
         ],
         "nivel_3_guerra": [
-          "War", "Bellum", "Conflict", "Battle", "Strife", "Chaos", "Blood", "Fire", "Rage", "Fury",
-          "Combat", "Front", "Siege", "Clash", "Doom", "Hazard", "Peril", "Crisis", "Violent", "Storm"
+          "Bellum", "Mars", "Ares", "Ragnarok", "Polemos", "Strife", "Clades", "Furor", "Ira", "Krieg",
+          "Senso", "Yuddha", "Hachiman", "Tyr", "Siege", "Carnage", "Havoc", "Doom", "Crisis", "Hazard",
+          "Inferno", "Conflict", "Battle", "Front", "Clash", "Ravage", "Storm", "Violent", "Peril", "Hostile"
         ],
         "nivel_pirata_ilegal": [
-          "Outlaw", "Rogue", "Corsair", "Skull", "Black", "Shadow", "Illegal", "Rebel", "Lawless", "Crimson",
-          "Smuggler", "Bandit", "Raider", "Thief", "Jolly", "Roger", "Free", "Wild", "Chaos", "Drift"
+          "Ronin", "Outlaw", "Corsair", "Rebel", "Lawless", "Umbra", "Nox", "Rogue", "Smuggler", "Bandit",
+          "Kaizoku", "Exul", "Pariah", "Renegade", "Shadow", "Skull", "Crimson", "Free", "Chaos", "Drift",
+          "Marauder", "Raider", "Vandal", "Wild", "Untamed", "Black", "Void", "Anarchy", "Mutiny", "Scourge"
         ]
       },
       "lore": {
         "culto_do_verme": [
-          "Shai", "Hulud", "Maw", "Hunger", "Burrow", "Soil", "Flesh", "Tendril", "Worm", "Lord",
-          "Feast", "Devourer", "Tunnel", "Tremor", "Skin", "Scale", "Tooth", "Swallow", "Dirt", "Beneath"
+          "Shai", "Hulud", "Maw", "Fome", "Wurm", "Boden", "Chair", "Hambre", "Tremor", "Schlund",
+          "Devourer", "Titan", "Burrow", "Carne", "Mandíbula", "Soil", "Lord", "Feast", "Vorace", "Swallow",
+          "Gueule", "Terre", "Fossa", "Gusano", "Vermi", "Rumble", "Dust", "Pó", "Hunger", "Titanus"
         ],
         "horror_biologico": [
-          "Viscera", "Whisper", "Spawn", "Egg", "Abomination", "Parasite", "Host", "Swarm", "Nidus", "Ichor",
-          "Scream", "Mutant", "Gore", "Bio", "Organic", "Growth", "Hive", "Nest", "Web", "Slime"
+          "Viscera", "Sussurro", "Whisper", "Oeuf", "Ei", "Abomination", "Ichor", "Schleim", "Nidus", "Parasite",
+          "Host", "Wirt", "Mutation", "Sangue", "Gore", "Slime", "Gosma", "Pesadilla", "Cauchemar", "Xeno",
+          "Huevo", "Uovo", "Incubo", "Angst", "Horror", "Blight", "Miasma", "Veneno", "Toxin", "Virus"
         ],
         "infestado_vil": [
-        "Brood", "Hive", "Swarm", "Larva", "Chitin", "Insecta", "Plague", "Nest", "Colony", "Parasite",
-        "Infestation", "Mandible", "Carapace", "Vile", "Grub", "Scourge", "Locust", "Web", "Venom", "Hatchery"
+          "Brood", "Hive", "Swarm", "Schwarm", "Essaim", "Enjambre", "Larva", "Chitin", "Panzer", "Mandible",
+          "Reine", "Regina", "Vile", "Vil", "Plaga", "Pest", "Scourge", "Geissel", "Ninho", "Colony",
+          "Colmeia", "Käfer", "Insecta", "Beetle", "Scarabeo", "Vermine", "Praga", "Infest", "Hatch", "Grub"
         ],
         "corrupcao_dissonante": [
-          "Dissonant", "Discord", "Violet", "Echo", "Harmonic", "Shard", "Mirror", "Glass", "Sentinel", "Glitch",
-          "Fracture", "Resonance", "Purple", "Amethyst", "Crystal", "Null", "Interceptor", "Atlantid", "Signal", "Error"
+          "Dissonant", "Discordia", "Glas", "Verre", "Vetro", "Spiegel", "Miroir", "Espejo", "Echo", "Eco",
+          "Atlantid", "Korvax", "Nada", "Null", "Void", "Leere", "Glitch", "Fehler", "Erreur", "Purple",
+          "Violet", "Amethyst", "Shard", "Scherbe", "Scheggia", "Resonance", "Sentinel", "Aeron", "Crimson", "Glass"
+        ],
+        "gek": [
+          "Spawn", "First", "Primeiro", "Imperium", "Dominus", "Balaron", "Aroma", "Scent", "Pheromone", "Odor",
+          "Duft", "Parfum", "Profumo", "Nip", "Toil", "Labor", "Unit", "Coin", "Munt", "Geld",
+          "Mercator", "Händler", "Marchand", "Profit", "Lucro", "Greed", "Gier", "Avidità", "Beak", "Schnabel",
+          "Pool", "Spawning", "Syrup", "Trade", "Bargain", "Pact", "Vertrag", "Accord", "Master", "Meister"
+        ],
+        "vykeen": [
+          "Grah", "Hirk", "Nal", "Drynne", "Honor", "Ehre", "Honneur", "Onore", "Blood", "Sangue",
+          "Blut", "Sang", "Ancestor", "Ahnen", "Ancêtre", "Warrior", "Krieger", "Guerrier", "Soldat", "Blade",
+          "Klinge", "Lama", "Dagger", "Dolch", "Glory", "Gloria", "Ruhm", "Death", "Tod", "Mort",
+          "Sentinel", "Interloper", "Eindringling", "Intruso", "Fury", "Wut", "Rage", "Combat", "Kampf", "War"
+        ],
+        "korvax": [
+          "Eheu", "Convergence", "Konvergenz", "Nada", "Polo", "Atlas", "Entity", "Entität", "Entité", "Echo",
+          "Eco", "Geist", "Esprit", "Spirit", "Shell", "Hülle", "Coque", "Casca", "Mask", "Maske",
+          "Visor", "Data", "Daten", "Données", "Logic", "Logik", "Logos", "Ratio", "Soul", "Alma",
+          "Seele", "Anima", "Void", "Prime", "Matrix", "Circuit", "Netz", "Réseau", "Signal", "Science"
         ]
       }
     }
