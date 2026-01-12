@@ -166,7 +166,7 @@ def lexico_criativo(data):
     # Tab 4: Conflito
     with t4:
         st.markdown("### Conflito")
-        lex = p.get("conflito-ameaca", {})
+        lex = p.get("conflito_ameaca", {})
         for cat, terms in lex.items():
             with st.expander(cat.replace("_", " ").title()):
                 st.markdown(" ".join([f"`{t}`" for t in terms]))
