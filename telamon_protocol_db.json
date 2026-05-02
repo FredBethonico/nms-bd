@@ -13,11 +13,31 @@
       "formato": "ANR // [Nome Latino] /// [Raça] [Tipo]-[Tier]",
       "exemplo": "ANR // Aurum Lux /// G MIN-3 (Gek, Mineração, Rica)",
       "temas_por_classe_estelar": {
-        "amarela_cobre": [ "Aurum", "Lux", "Sol", "Origo", "Prima", "Helios", "Radiis", "Lumen", "Corona" ],
-        "vermelha_cadmio": [ "Rubra", "Sanguis", "Ignis", "Mars", "Ira", "Flamma", "Cinis", "Vulcan", "Ember", "Crimson" ],
-        "verde_emeril": [ "Viridis", "Venenum", "Silva", "Acidus", "Vita", "Floralis", "Herba", "Gaea", "Chloris", "Borealis" ],
-        "azul_indio": [ "Caelum", "Abyssus", "Gelu", "Aether", "Glacies", "Nix", "Maris", "Cobalt", "Azure", "Cerulean" ],
-        "buraco_negro": [ "Nox", "Umbra", "Finis", "Mors", "Void", "Tenebrae", "Obscura", "Abyss", "Nihil", "Eventus" ]
+        "amarela_cobre": [
+          "Aurum", "Lux", "Sol", "Origo", "Prima", "Helios", "Radiis", "Lumen", "Corona", "Phoebus",
+          "Chryso", "Aurea", "Lucent", "Fulgur", "Hyperion", "Cuprum", "Kiku", "Surya", "Aton", "Clarus",
+          "Oriens", "Zenith", "Eos", "Heliodor", "Lumina", "Ra", "Pioner", "Apex", "Clara", "Foco"
+        ],
+        "vermelha_cadmio": [
+          "Rubra", "Sanguis", "Ignis", "Mars", "Ira", "Flamma", "Cinis", "Vulcan", "Ember", "Crimson",
+          "Carmine", "Vermilion", "Aka", "Rakta", "Cruor", "Pyre", "Pyros", "Cadmia", "Ruber", "Inferno",
+          "Ares", "Sekhmet", "Pele", "Magma", "Scarlata", "Rufus", "Garnet", "Fervor", "Brasa", "Sangria"
+        ],
+        "verde_emeril": [
+          "Viridis", "Venenum", "Silva", "Acidus", "Vita", "Floralis", "Herba", "Gaea", "Chloris", "Borealis",
+          "Smaragdus", "Prasinus", "Midori", "Harita", "Toxis", "Venom", "Flora", "Arbor", "Verdant", "Malachite",
+          "Jade", "Phyto", "Natura", "Demeter", "Fertilis", "Miasma", "Musgo", "Lichen", "Toxin", "Blight"
+        ],
+        "azul_indio": [
+          "Caelum", "Abyssus", "Gelu", "Aether", "Glacies", "Nix", "Maris", "Cobalt", "Azure", "Cerulean",
+          "Lapis", "Sapphirus", "Cyan", "Ao", "Neela", "Aqua", "Oceanus", "Pelagos", "Boreal", "Cryo",
+          "Glacialis", "Tidal", "Leviathan", "Polaris", "Sirius", "Rigel", "Indigo", "Frost", "Oceano", "Profundo"
+        ],
+        "buraco_negro": [
+          "Nox", "Umbra", "Finis", "Mors", "Void", "Tenebrae", "Obscura", "Abyss", "Nihil", "Eventus",
+          "Singularity", "Erebus", "Tartarus", "Kuro", "Kala", "Ater", "Niger", "Caligo", "Vortex", "Chasm",
+          "Lethe", "Oblivion", "Horizon", "Inanis", "Nulla", "Eclipse", "Onyx", "Vácuo", "Fenda", "Ocaso"
+        ]
       },
       "codigos_taticos": {
         "raca": {
